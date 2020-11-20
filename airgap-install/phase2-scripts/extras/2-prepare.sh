@@ -1,10 +1,5 @@
 #!/bin/bash
 
-podman load -i registry.tar.gz
-
-[ocpadmin@rocp2ba extras]$ cat 2-prepare.sh
-#!/bin/bash
-
 # Create a place for the mirror registry to store images
 # Then change the BASEDIR variable to the directory
 
