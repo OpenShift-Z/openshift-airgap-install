@@ -6,11 +6,9 @@ export PATH=.:$PATH
 
 #if [[ ${ARCHITECTURE} == "s390x" ]]
 #then
-  #wget https://mirror.openshift.com/pub/openshift-v4/${ARCHITECTURE}/dependencies/rhcos/4.6/latest/rhcos-live-initramfs.s390x.img
-  #wget https://mirror.openshift.com/pub/openshift-v4/${ARCHITECTURE}/dependencies/rhcos/4.6/latest/rhcos-live-kernel-s390x
-  #wget https://mirror.openshift.com/pub/openshift-v4/${ARCHITECTURE}/dependencies/rhcos/4.6/latest/rhcos-live-rootfs.s390x.img
-  #wget https://mirror.openshift.com/pub/openshift-v4/${ARCHITECTURE}/dependencies/rhcos/4.6/latest/rhcos-dasd.s390x.raw.gz
-  #wget https://mirror.openshift.com/pub/openshift-v4/${ARCHITECTURE}/dependencies/rhcos/4.6/latest/rhcos-metal.s390x.raw.gz
+#  wget https://mirror.openshift.com/pub/openshift-v4/${ARCHITECTURE}/dependencies/rhcos/4.6/latest/rhcos-live-initramfs.s390x.img
+#  wget https://mirror.openshift.com/pub/openshift-v4/${ARCHITECTURE}/dependencies/rhcos/4.6/latest/rhcos-live-kernel-s390x
+#  wget https://mirror.openshift.com/pub/openshift-v4/${ARCHITECTURE}/dependencies/rhcos/4.6/latest/rhcos-live-rootfs.s390x.img
 #fi
 
 wget https://mirror.openshift.com/pub/openshift-v4/${ARCHITECTURE}/clients/ocp/${OCP_RELEASE}/openshift-client-linux-${OCP_RELEASE}.tar.gz

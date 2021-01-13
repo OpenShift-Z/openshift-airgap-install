@@ -4,7 +4,7 @@ export PATH=.:$PATH
 
 . ./env
 
-SIGNATURE=$(cat ${REMOVABLE_MEDIA_PATH}/mirror/config/signature-sha256*.yaml | grep name: | awk '{print $2}' | sed s/-/:/)
+SIGNATURE=$(cat ${REMOVABLE_MEDIA_PATH}/mirror/config/signature-sha256*.yaml |  jq '.metadata.name' | sed s/-/:/ | tr -d '"')
 echo $SIGNATURE
 
 #./oc patch clusterversion version --type="merge" -p '{"spec":{"channel":"stable-4.4"}}'
